@@ -101,6 +101,7 @@ img{
 @media screen and (max-width: 380px){
   .card__face {
     font-size: 19px;
+    letter-spacing: 0;
   }
   
 }
