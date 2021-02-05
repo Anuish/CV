@@ -1,11 +1,11 @@
 *{
-	margin: 0;
+  margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	font-family:arial;
 }
 body {
-    background: #333;
+  background: #333;
 }
 
 .card__face {
@@ -17,16 +17,15 @@ body {
   border-radius: 20px;
 }
 img{
-	width:150px;
-	height: auto;
-	border-radius: 50%;
-	border: 4px solid #f5f2d0;
-	margin: 1% 40%;
+   width:150px;
+   height: auto;
+   border-radius: 50%;
+   border: 4px solid #f5f2d0;
+   margin: 1% 40%;
 
 }
 .card__msg {
-  position: relative;
-  font-family: Consolas, monospace; 
+  position: relative; 
   box-sizing: border-box; 
 }
 #head, #link{
@@ -102,6 +101,7 @@ img{
 @media screen and (max-width: 380px){
   .card__face {
     font-size: 19px;
+    letter-spacing: 0;
   }
   
 }
