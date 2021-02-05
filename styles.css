@@ -2,7 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family:calibri, Consolas, monospace, arial, sans-serif;
+	font-family:arial;
 }
 body {
     background: #333;
@@ -25,7 +25,8 @@ img{
 
 }
 .card__msg {
-  position: relative; 
+  position: relative;
+  font-family: Consolas, monospace; 
   box-sizing: border-box; 
 }
 #head, #link{
