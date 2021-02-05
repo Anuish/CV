@@ -6,19 +6,15 @@
 }
 body {
     background: #333;
-    padding-top: 5em auto;
-    display: flex;
-    justify-content: center;
 }
 
 .card__face {
-    position: absolute;
-    width: 70%;
-    height: 80%;
-    box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.1);
-    margin: 5% 15%;
-    border: 0.4rem solid pink;
-    border-radius: 20px;
+  position: absolute;
+  width: 70%;
+  height: 80%;
+  box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.1);
+  margin: 5% 15%;
+  border-radius: 20px;
 }
 img{
 	width:150px;
@@ -33,63 +29,80 @@ img{
   font-family: Consolas, monospace; 
   box-sizing: border-box; 
 }
-h2{
+#head, #link{
+  font-size: 32px;
   padding-left: 2rem;
-  padding-bottom: 2rem;
   color: #fff;
 }
 
-.typing {
+#typing {
   color: #fff;
   line-height: 1.2;
   letter-spacing: 0.1rem;
-  padding: 0 2rem;
+  padding: 1rem 2rem 1rem 2rem;
   position: absolute;
   top: 0;
   margin: 0;
   z-index: -1;
 }
 
-.hiders {
-  margin: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
+#link{
+  display: none;
 }
 
-.hiders p {
-  position: relative; 
-  clear: both; 
-  margin: 0;
-  float: right; /* makes animation go left-to-right */
-  width:0; /* graceful degradation: if animation doesn't work, these are invisible by default */
-  background: #333; /* same as page background */
-  animation: typing 5s steps(30, end);
-  animation-fill-mode: both;  /* load first keyframe on page load, leave on last frame at end */
+@media screen and (max-width: 1024px){
+  img{
+    width: 40%;
+    margin: 1% 30%;
+  }
+  .card__face{
+    font-size: 32px;
+  }
+  #head, #link{
+    font-size: 40px;
+  }
 }
+
+@media screen and (max-width: 850px) {
+  body{
+    padding: 0;
+    margin: 0;
+  }
+  .card__face{
+    font-size: 20px;
+    box-shadow: none;
+    border-radius: 0;
+  }
+  #head, #link{
+    font-size: 25px;
+  }
   
-.hiders p:nth-child(2) {
-  animation-delay: 5s;
 }
-.hiders p:nth-child(3) {
-  animation-delay: 10s;
+
+@media screen and (max-width: 841px) {
+  .card__face {
+    border-radius: 0;
+    
+  }
 }
-.hiders p:nth-child(4) {
-  animation-delay: 15s;
+
+@media screen and (max-width: 450px){
+  img{
+    margin: 2% 29%;
+  }
+  .card__face {
+    font-size: 23px;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+  
+  }
+  
 }
-.hiders p:nth-child(5) {
-  animation-delay: 20s;
+@media screen and (max-width: 380px){
+  .card__face {
+    font-size: 19px;
+  }
+  
 }
-.hiders p:nth-child(6) {
-  animation-delay: 25s;
-}
-.hiders p:nth-child(7) {
-  animation-delay: 30s;
-}
-@keyframes typing {
-  from { width: 100% }
-  to { width: 0 }
-}
-.link{
-  color: white;
-}
+
