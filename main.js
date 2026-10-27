@@ -1,4 +1,4 @@
-var typeString = "SHE is a computing science undegraduate student with her strength in the following programming"
+var typeString = "SHE was a computing science undegraduate student(She is a Full Stack engineer) with her strength in the following programming"
  + " languages respectively: Java, JavaScript and Python. She enjoys solving problems and music. In her spare time,"
  + " she practices the violin, watches finance videoes, and dances to the beat. Currently, she is interested in" 
  + " developing her acquired skills as well as acquiring new skills through internships and mentorships.";
